@@ -66,5 +66,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             </configuration>
         </plugin>
   </plugins>
+  <distributionManagement>
+    <repository>
+      <id>internal</id>
+      <name>Internal Repository-releases</name>
+      <url>
+      dav:http://localhost:8081/repository/maven-releases/
+	  </url>
+    </repository>
+    <snapshotRepository>
+      <id>internal</id>
+      <name>Internal Repository-snapshots</name>
+     <url>dav:http://localhost:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
  </build> 
 </project>
