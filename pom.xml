@@ -6,6 +6,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
    <artifactId>pythoncode</artifactId>
    <version>09.11</version>
    <packaging>jar</packaging>
+   <repositories>
+	<repository>
+	    <id>java.net</id>
+	    <url>https://maven.java.net/content/repositories/public/</url>
+	</repository>
+	<repository>
+			<id>internal</id>
+			<name>Internal Repository</name>
+			<url>http://localhost:8081/nexus</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+    </repositories>
    
    <build>
    <directory>${project.basedir}/target</directory>
